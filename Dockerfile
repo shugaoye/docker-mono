@@ -24,5 +24,5 @@ WORKDIR /tmp
 # Work in the build directory, repo is expected to be init'd here
 # WORKDIR /mono
 
-COPY utils/docker_entrypoint.sh /root/docker_entrypoint.sh
+# COPY utils/docker_entrypoint.sh /root/docker_entrypoint.sh
 # ENTRYPOINT ["/root/docker_entrypoint.sh"]
