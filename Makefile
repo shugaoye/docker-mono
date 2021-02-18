@@ -1,5 +1,5 @@
 DOCKER = docker
-IMAGE = shugaoye/mono:6.12.0.107
+IMAGE = shugaoye/mono:p2.5.2
 
 dev: Dockerfile
 	$(DOCKER) build -t $(IMAGE) .

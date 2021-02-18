@@ -8,7 +8,7 @@ GROUPNAME=`id -gn`
 if [ -n "$1" ]; then
         IMAGE=$1
 else
-        IMAGE=shugaoye/mono:6.12.0.107
+        IMAGE=shugaoye/mono:p2.5.2
 fi
 
 vol1="$(cd ..; pwd)"
