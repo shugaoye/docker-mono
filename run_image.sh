@@ -8,7 +8,7 @@ GROUPNAME=`id -gn`
 if [ -n "$1" ]; then
         IMAGE=$1
 else
-        IMAGE=shugaoye/mono:p2.5.2
+        IMAGE=shugaoye/docker-mono:p2.5.2
 fi
 
 vol1="$(cd ..; pwd)"
