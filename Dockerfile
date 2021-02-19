@@ -6,7 +6,7 @@ FROM shugaoye/docker-mono:buster-p2.5.2
 LABEL maintainer="shugaoye@yahoo.com"
 
 RUN apt-get update \
-  && apt-get install -y sudo vim-common vim-tiny \
+  && apt-get install -y sudo tmux vim-common vim-tiny \
   && rm -rf /var/lib/apt/lists/* /tmp/*
 
 RUN mkdir /var/run/sshd
