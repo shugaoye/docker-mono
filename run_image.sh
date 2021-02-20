@@ -16,7 +16,6 @@ vol1="$(cd ..; pwd)"
 docker run -ti --rm -e DISPLAY=$DISPLAY \
   -v /tmp/.X11-unix:/tmp/.X11-unix \
   -v ${vol1}:/home/${USERNAME} \
-  --net=host \
   -p 8888:8888 \
   -p 22:22 \
   -e USER_ID=${USER_ID} -e GROUP_ID=${GROUP_ID} \
