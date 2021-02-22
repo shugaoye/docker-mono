@@ -17,9 +17,10 @@ RUN echo 'root:root' | chpasswd
 RUN sed -ri 's/^PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config
 RUN sed -ri 's/UsePAM yes/#UsePAM yes/g' /etc/ssh/sshd_config
 
-EXPOSE 22
+RUN pip3 install python-nubia
 
-CMD    ["/usr/sbin/sshd", "-D"]
+#EXPOSE 22
+#CMD    ["/usr/sbin/sshd", "-D"]
 
 COPY utils/bash.bashrc /root/bash.bashrc
 RUN chmod 755 /root /root/bash.bashrc

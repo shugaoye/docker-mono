@@ -17,7 +17,6 @@ docker run -ti --rm -e DISPLAY=$DISPLAY \
   -v /tmp/.X11-unix:/tmp/.X11-unix \
   -v ${vol1}:/home/${USERNAME} \
   -p 8888:8888 \
-  -p 22:22 \
   -e USER_ID=${USER_ID} -e GROUP_ID=${GROUP_ID} \
   -e USERNAME=${USERNAME} -e GROUPNAME=${GROUPNAME} \
   ${IMAGE} /bin/sh
